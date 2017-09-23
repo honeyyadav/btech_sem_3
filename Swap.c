@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 int main(){
-	int x, y, temp;
+	int x, y;
 	printf("Welcome sir, this program takes two values as input.\n");
 	printf("1. The value of x.\n");
 	printf("2. The value of y.\n");
@@ -13,9 +13,9 @@ int main(){
 	printf("Ok, enter the value of y now.->");
 	scanf("%d",&y);
 	//---------logic------------
-	temp=x;
-	x=y;
-	y=temp;
+	x=x+y;
+	y=x-y;
+	x=x-y;
 	//-------logic end----------
 	printf("\n************RESULT************\n\n");
 	printf("Now the value of x becomes: %d\n",x);
