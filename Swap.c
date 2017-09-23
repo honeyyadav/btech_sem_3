@@ -13,9 +13,9 @@ int main(){
 	printf("Ok, enter the value of y now.->");
 	scanf("%d",&y);
 	//---------logic------------
-	x=x+y;
-	y=x-y;
-	x=x-y;
+	x=x^y;
+	y=x^y;
+	x=x^y;
 	//-------logic end----------
 	printf("\n************RESULT************\n\n");
 	printf("Now the value of x becomes: %d\n",x);
