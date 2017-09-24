@@ -1,34 +1,50 @@
 #include <stdio.h>
-void partition(int arr[],int l,int r);
+#include <stdlib.h>
+void quickSort(int arr[],int start,int end);
+int partition(int arr[],int start,int end);
+void swap(int *a,int *b);
 int main(){
 	int n;
-	printf("Enter number of elements.->");
+	printf("Welcome to the sorting program.\n");
+	printf("This program takes array as an input an prints result as sorted array.\n");
+	system("pause");
+	system("cls");
+	printf("Enter the number of elements you want to sort.->");
 	scanf("%d",&n);
 	printf("Enter all elements.->\n");
 	int arr[n];
 	for(int i=0;i<n;i++){
 		scanf("%d",&arr[i]);
 	}
-	partition(arr,0,n-1);
-	printf("The quick sorted array is:-\n");
+	quickSort(arr,0,n-1);
+	printf("The sorted array is:-\n");
 	for(int i=0;i<n;i++){
-		printf("%d\n",arr[i]);
+		printf("%d ",arr[i]);
+	}
+	printf("\n\n");
+	system("pause");
+}
+void quickSort(int arr[],int start,int end){
+	if(start<end){
+		int position=partition(arr,start,end);
+		quickSort(arr,start,position-1);
+		quickSort(arr,position+1,end);
 	}
 }
-void partition(int arr[],int l,int r){
-	if(l<r){
-		int pivot=r,temp,j;
-		for(int i=pivot-1;i>=0;i--){
-			if(arr[i]>arr[pivot]){
-				temp=arr[i];
-				for(j=i;j<pivot;j++){
-					arr[j]=arr[j+1];
-				}
-				arr[j]=temp;
-				pivot=j-1;
-			}
+int partition(int arr[],int start,int end){
+	int pivot=arr[end];
+	int pivotposition=start;
+	for(int i=start;i<end;i++){
+		if(arr[i]<pivot){
+			swap(&arr[i],&arr[pivotposition]);
+			pivotposition++;
 		}
-		partition(arr,l,pivot-1);
-		partition(arr,pivot+1,r);
 	}
+	swap(&arr[end],&arr[pivotposition]);
+	return pivotposition;
+}
+void swap(int *a,int *b){
+	int temp=*a;
+	*a=*b;
+	*b=temp;
 }
