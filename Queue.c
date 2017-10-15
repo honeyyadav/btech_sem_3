@@ -7,12 +7,13 @@
 
 #include <stdlib.h>
 #include <stdio.h>
+#define MAX 100
 void enQueue();
 void deQueue();
 void isEmpty();
 void display();
 void out_();
-int arr[100];
+int arr[MAX];
 int front=-1;
 int rear=-1;
 int main(){
