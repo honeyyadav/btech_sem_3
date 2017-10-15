@@ -46,7 +46,7 @@ int main(){
 }
 void enQueue(){
 	system("cls");
-	if(rear==99){
+	if(rear==MAX-1){
 		printf("\nSorry queue is overflow.\n\n");
 		return;
 	}
