@@ -1,6 +1,6 @@
 /****************************************************
 *  AUTHOR:                  HONEY YADAV             *
-*  PROGRAM:                 QUEUE                   *
+*  PROGRAM(NUMBER):         RAISING POWER(1)        *
 *  IN COORDINATION WITH:    DR. SATINDER BAL GUPTA  *
 *  INSTITUITION:            IGU MEERPUR             *
 ****************************************************/
