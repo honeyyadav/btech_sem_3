@@ -1,6 +1,6 @@
 /****************************************************
 *  AUTHOR:                  HONEY YADAV             *
-*  PROGRAM(PROGRAM NO):     Function Calculator(3)  *
+*  PROGRAM(PROGRAM NO):     FUNCTION CALCULATOR(3)  *
 *  IN COORDINATION WITH:    DR. SATINDER BAL GUPTA  *
 *  INSTITUITION:            IGU MEERPUR             *
 ****************************************************/
