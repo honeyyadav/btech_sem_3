@@ -1,6 +1,6 @@
 /****************************************************
 *  AUTHOR:                  HONEY YADAV             *
-*  PROGRAM(PROGRAM NO):     BINARY FILE(7)          *
+*  PROGRAM(PROGRAM NO):     BINARY FILE(8)          *
 *  IN COORDINATION WITH:    DR. SATINDER BAL GUPTA  *
 *  INSTITUITION:            IGU MEERPUR             *
 ****************************************************/
