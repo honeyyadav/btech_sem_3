@@ -12,11 +12,11 @@ int main(int argc, char const *argv[]) {
     double dx=x2-x1;
     double dy=y2-y1;
     int steps;
-    if(dx>dy){
-        steps=(int)dx;
+    if(abs(dx)>abs(dy)){
+        steps=abs(dx);
     }
     else{
-        steps=(int)dy;
+        steps=abs(dy);
     }
     double xinc=(double)dx/steps;
     double yinc=(double)dy/steps;
