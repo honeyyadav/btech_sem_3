@@ -1,3 +1,10 @@
+/**********************************************
+*   AUTHOR:                  HONEY YADAV      *
+*   PROGRAM:                 DDA              *
+*   IN COORDINATION WITH:    MUSKAN MAM       *
+*   INSTITUITION:            IGU MEERPUR      *
+**********************************************/
+
 #include <graphics.h>
 #include <conio.h>
 #include <iostream>
