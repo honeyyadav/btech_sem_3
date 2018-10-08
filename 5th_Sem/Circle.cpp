@@ -19,7 +19,7 @@ int main()
 	cout<<"Enter center coordinates of circle(x,y)->";
 	cin>>x>>y;
 	cout<<"Enter radius of circle(x,y)->";
-    cin>>r;
+    	cin>>r;
 	circle(x,y,r);
 	getch();
 
