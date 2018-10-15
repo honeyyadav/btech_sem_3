@@ -11,18 +11,18 @@ using namespace std;
 void setBackground(int);
 int main()
 {
-	int gd=DETECT, gm, x, y, r;
+    int x, y, r;
+	cout<<"Enter center coordinates of circle(x,y)->";
+	cin>>x>>y;
+	cout<<"Enter radius of circle(x,y)->";
+    cin>>r;
+    int gd=DETECT, gm;
 	detectgraph(&gd, &gm);
 	initgraph(&gd, &gm,"");
 	setBackground(WHITE);
 	setcolor(BLACK);
-	cout<<"Enter center coordinates of circle(x,y)->";
-	cin>>x>>y;
-	cout<<"Enter radius of circle(x,y)->";
-    	cin>>r;
 	circle(x,y,r);
 	getch();
-
 	return 0;
 }
 void setBackground(int colorcode){
