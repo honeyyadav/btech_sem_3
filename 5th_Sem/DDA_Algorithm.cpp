@@ -9,7 +9,10 @@
 #include <conio.h>
 #include <iostream>
 #include <cmath>
+
+void setBackground(int);
 using namespace std;
+
 int main(int argc, char const *argv[]) {
     double x1,y1,x2,y2;
     cout<<"Please enter first point(x1,y1)>";
@@ -30,8 +33,9 @@ int main(int argc, char const *argv[]) {
     cout<<"x increment="<<xinc<<" y increment="<<yinc<<endl;
     int gd=DETECT,gm;
     initgraph(&gd,&gm,"");
+    setBackground(WHITE);
     for(int i=0;i<steps;i++){
-        putpixel(round(x1),round(y1),WHITE);
+        putpixel(round(x1),round(y1),BLACK);
         cout<<round(x1)<<" "<<round(y1)<<endl;
         x1=x1+xinc;
         y1=y1+yinc;
@@ -39,4 +43,10 @@ int main(int argc, char const *argv[]) {
     getch();
     closegraph();
     return 0;
+}
+void setBackground(int colorcode){
+    setcolor(colorcode);
+    for(int i=0;i<480;i++){
+        line(0,i,640,i);
+    }
 }
